@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="240">
+  <defs>
+    <linearGradient id="bg_lq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#021b2b"/>
+      <stop offset="100%" stop-color="#010a11"/>
+    </linearGradient>
+    <linearGradient id="blue-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glow_lq">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="800" height="240" rx="16" fill="url(#bg_lq)" stroke="#0369a1" stroke-width="2"/>
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="160" height="160" rx="20" fill="#082f49" stroke="url(#blue-glow)" stroke-width="3" filter="url(#glow_lq)"/>
+    <path d="M80 40 C60 70 45 95 45 115 C45 135 60 150 80 150 C100 150 115 135 115 115 C115 95 100 70 80 40 Z" fill="#0ea5e9" filter="url(#glow_lq)"/>
+    <circle cx="70" cy="110" r="10" fill="#bae6fd"/>
+  </g>
+  <text x="240" y="95" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="1.5">
+    LIQUID<tspan fill="#38bdf8">-DATA 2.0</tspan>
+  </text>
+  <text x="240" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" fill="#cbd5e1">
+    7-Layer Molecular Sharding Protocol &amp; In-Memory Cryptographic Self-Healing
+  </text>
+  <text x="240" y="170" font-family="'Courier New', monospace" font-size="13" font-weight="700" fill="#7dd3fc">
+    [100% Monte Carlo Healing] · [O(1) Route Cache] · [Zero Precision Loss]
+  </text>
+</svg>
